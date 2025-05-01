@@ -7,12 +7,10 @@ class Engine:
     print("Engine is startng .....")
 
 class Car:
-  def __init__(self ,engine):
+  def __init__(self):
      self.engine = Engine()
   def start_engie(self):
     return self.engine.start()
-
-engine = Engine()
-car = Car(engine)
-
+  
+car = Car()
 print(car.start_engie())
